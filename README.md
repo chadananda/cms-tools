@@ -34,7 +34,8 @@ You can use the tool (synchronously) to sync local content with database and the
   // modify source object and some metadata then save
   pet_article.source = pet_article.source.replace(/cat/g, 'dog')
   pet_article.animal = 'dog'
-  updater.set(pet_article)
+  updater.set(pet_article) // updates db but also updates `pet_article` with new _html, _ver, _crc etc.
+
 
   // add a new object -- will be validated against document definition
   let new_obj = {lang: 'en', animal: 'dog', pubdate='2019-10-5', src="# Let's get Started {.title}"}
