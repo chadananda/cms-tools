@@ -51,7 +51,7 @@ Inside your project folder, initialize your project:
 
 This will add your
 
-<pre>notepad.config.json5</pre>:  (a JSON5 file)
+```notepad.config.json5```:  (a JSON5 file)
 ```javascript
 {
   project: 'KidCo Pet Catalog',
@@ -79,11 +79,11 @@ This will add your
 }
 ```
 
+## Tasklist
 
-
-
-
-
+[-] # '[-]'
+[o] # '[o]'
+[O] # '[O]'
 
 
 
