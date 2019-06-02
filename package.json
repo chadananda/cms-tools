@@ -1,0 +1,27 @@
+{
+  "name": "cms-tools",
+  "version": "1.0.0",
+  "description": "cms-tools for static content repositories",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chadananda/cms-updater.git"
+  },
+  "keywords": [
+    "jamstack",
+    "markdown",
+    "cms",
+    "cms",
+    "tools",
+    "cms"
+  ],
+  "author": "Chad Jones <chadananda@gmail.com> (http://bahai-education.org/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chadananda/cms-updater/issues"
+  },
+  "homepage": "https://github.com/chadananda/cms-updater#readme"
+}
