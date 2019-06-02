@@ -1,6 +1,6 @@
 {
-  "name": "cms-tools",
-  "version": "1.0.1",
+  "name": "@notepad/cms-tools",
+  "version": "1.0.2",
   "description": "cms-tools for static content repositories",
   "main": "index.js",
   "scripts": {
@@ -14,9 +14,7 @@
     "jamstack",
     "markdown",
     "cms",
-    "cms",
-    "tools",
-    "cms"
+    "tools"
   ],
   "author": "Chad Jones <chad@notepad.com> (http://notepad.com/)",
   "license": "ISC",
