@@ -84,7 +84,7 @@ This will add your
 
 - [x] Create Readme with basic definition
 - [x] Create cms-updater repository
-- [ ] Init NPM with scope (@notepad.com/cms-tools)
+- [x] Init NPM with scope (@notepad.com/cms-tools)
 - [ ] Command-line interface
 - [ ] Init -- integrate login
 - [ ] Init -- create default config
