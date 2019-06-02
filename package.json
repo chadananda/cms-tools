@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chadananda/cms-updater.git"
+    "url": "git+https://github.com/chadananda/cms-tools.git"
   },
   "keywords": [
     "jamstack",
@@ -18,10 +18,10 @@
     "tools",
     "cms"
   ],
-  "author": "Chad Jones <chadananda@gmail.com> (http://bahai-education.org/)",
+  "author": "Chad Jones <chad@notepad.com> (http://notepad.com/)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chadananda/cms-updater/issues"
+    "url": "https://github.com/chadananda/cms-tools/issues"
   },
-  "homepage": "https://github.com/chadananda/cms-updater#readme"
+  "homepage": "https://github.com/chadananda/cms-tools#readme"
 }
