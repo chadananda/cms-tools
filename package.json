@@ -1,6 +1,6 @@
 {
   "name": "@notepad/cms-tools",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "cms-tools for static content repositories",
   "main": "index.js",
   "scripts": {
