@@ -81,9 +81,9 @@ This will add your
 
 ## Tasklist
 
-* [-] # '[-]'
-* [o] # '[o]'
-* [O] # '[O]'
+* [-] # [-]
+* [o] # [o]
+* [O] # [O]
 
 
 
