@@ -81,15 +81,28 @@ This will add your
 
 ## Tasklist
 
-- [ ] Mercury
-- [x] Venus
-- [x] Earth (Orbit/Moon)
-- [x] Mars
-- [ ] Jupiter
-- [ ] Saturn
-- [ ] Uranus
-- [ ] Neptune
-- [ ] Comet Haley
+- [x] Create Readme with basic definition
+- [x] Create cms-updater repository
+- [ ] Init NPM with scope (@notepad.com/cms-tools)
+- [ ] Command-line interface
+- [ ] Init -- integrate login
+- [ ] Init -- create default config
+- [ ] Init -- check for required content processor stack (like marked or markdown-it)
+- [ ] Sync -- Load content
+- [ ] Sync -- Validate content
+- [ ] Sync -- Update databse
+- [ ] Sync -- Copy assets to static
+- [ ] Sync -- Optimize images on copy
+- [ ] Reader -- sync
+- [ ] Reader -- get
+- [ ] Reader -- filter
+- [ ] Reader -- sort
+- [ ] Reader -- validate
+- [ ] Reader -- set
+- [ ] Reader -- watch
+- [ ] Split out read-only reader as exported object
+- [ ] Build read-only reader as min.js
+
 
 
 
