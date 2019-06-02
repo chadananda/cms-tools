@@ -81,11 +81,15 @@ This will add your
 
 ## Tasklist
 
-# What about this one? [checkbox:unchecked]
-* [-] # [-]
-* [o] # [o]
-* [O] # [O]
-
+- [ ] Mercury
+- [x] Venus
+- [x] Earth (Orbit/Moon)
+- [x] Mars
+- [ ] Jupiter
+- [ ] Saturn
+- [ ] Uranus
+- [ ] Neptune
+- [ ] Comet Haley
 
 
 
