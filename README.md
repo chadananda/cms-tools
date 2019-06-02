@@ -81,6 +81,7 @@ This will add your
 
 ## Tasklist
 
+# What about this one? [checkbox:unchecked]
 * [-] # [-]
 * [o] # [o]
 * [O] # [O]
