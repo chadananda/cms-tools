@@ -86,7 +86,7 @@ This will add your
 - [x] Create cms-updater repository
 - [x] Init NPM with scope (@notepad.com/cms-tools)
 - [x] Publish initial NPM module to reserve name
-- [ ] Command-line interface
+- [x] Command-line interface (very simple, just 'sync')
 - [ ] Init -- integrate login
 - [ ] Init -- create default config
 - [ ] Init -- check for required content processor stack (like marked or markdown-it)

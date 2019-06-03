@@ -1,14 +1,17 @@
 {
   "name": "@notepad/cms-tools",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "cms-tools for static content repositories",
-  "main": "index.js",
+  "main": "cmstools.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chadananda/cms-tools.git"
+  },
+  "bin": {
+    "cmstools": "./cmstools.js"
   },
   "keywords": [
     "jamstack",
@@ -21,5 +24,23 @@
   "bugs": {
     "url": "https://github.com/chadananda/cms-tools/issues"
   },
-  "homepage": "https://github.com/chadananda/cms-tools#readme"
+  "homepage": "https://github.com/chadananda/cms-tools#readme",
+  "dependencies": {
+    "app-root-path": "^2.2.1",
+    "commander": "^2.20.0",
+    "fs-sync": "^1.0.6",
+    "git-user-config": "^1.0.2",
+    "git-user-email": "git://github.com/codejamninja/git-user-email.git#npm",
+    "hash.js": "^1.1.7",
+    "json5": "^2.1.0",
+    "jsonfile": "^5.0.0",
+    "markdown-it": "^8.4.2",
+    "marked": "^0.6.2",
+    "parse-git-config": "^3.0.0",
+    "path": "^0.12.7",
+    "shelljs": "^0.8.3",
+    "string-similarity": "^3.0.0",
+    "transliteration": "^2.1.3",
+    "trim-character": "^2.0.1"
+  }
 }
