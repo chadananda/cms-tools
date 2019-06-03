@@ -87,8 +87,7 @@ This will add your
 - [x] Init NPM with scope (@notepad.com/cms-tools)
 - [x] Publish initial NPM module to reserve name
 - [x] Command-line interface (very simple, just 'sync')
-- [ ] Init -- integrate login
-- [ ] Init -- create default config
+- [x] Init -- create default config
 - [ ] Init -- check for required content processor stack (like marked or markdown-it)
 - [ ] Sync -- Load content
 - [ ] Sync -- Validate content
@@ -104,6 +103,7 @@ This will add your
 - [ ] Reader -- watch
 - [ ] Split out read-only reader as exported object
 - [ ] Build read-only reader as min.js
+- [ ] Init -- integrate login
 
 
 
