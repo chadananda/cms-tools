@@ -2,6 +2,12 @@
 // @notepad/cms-tools
 // should have commonjs interface with both update and read-only objects
 
+// notes:
+// to validate writes on the server: https://github.com/zrrrzzt/bullet-catcher
+// https://github.com/kristianmandrup/chain-gun
+// https://github.com/kristianmandrup/gun-edge
+
+
 const shell = require("shelljs")
 const program = require('commander')
 const path = require("path");
@@ -12,8 +18,10 @@ const trim = require('trim-character')
 const  { transliterate, slugify } = require('transliteration')
 const stringSimilarity = require('string-similarity')
 const JSON5 = require('json5')
+const Gun = require('gun/gun')
+const Sea = require('gun/sea')
 
-var notepad_updater = {
+var notepad_cmstools = {
   sync: notepad_sync,
   status: notepad_status,
   init: notepad_init
@@ -28,15 +36,15 @@ program
   .action((cmd) => {
     if (cmd==='init') {
       console.log('notepad cms-tools init', '0.0.1')
-      notepad_updater.init()
+      notepad_cmstools.init()
     }
     else if (cmd==='status') {
       console.log('notepad cms-tools status', '0.0.1')
-      notepad_updater.status()
+      notepad_cmstools.status()
     }
     else { // sync
       console.log('notepad cms-tools sync', '0.0.1')
-      notepad_updater.sync()
+      notepad_cmstools.sync()
     }
   })
   .parse(process.argv)
@@ -55,16 +63,16 @@ function notepad_init() {
 function notepad_sync() {
   // read config file
   let configFile = require('app-root-path').path + '/notepad.config.json5'
-  if (fs.exists(configFile)) {
-    // console.log(configFile)
-    // console.log(fs.read(configFile))
-
-    let config = JSON5.parse(fs.read(configFile))
-    console.log(config)
-
-
-
+  var config = false
+  if (fs.exists(configFile)) config = JSON5.parse(fs.read(configFile))
+  if (!config) {
+    console.error('No configuration file found')
+    return
   }
+  let typecount = Object.keys(config.fields).length
+  console.log(`A configuration file was found: ${typecount} document type${typecount>1?'s':''} defined.`)
+
+
 
 
 
@@ -106,6 +114,6 @@ function notepad_reader() {
 // *************************************
 // export these two parts seperately so that we can use only the reader code in the browser
 module.exports = {
-  updater: notepad_updater,
+  updater: notepad_cmstools,
   reader: notepad_reader
 }

@@ -1,5 +1,6 @@
 {
   project: 'Sacred Traditions Interfaith Projects',
+  prefix: '902736890',
 
   // enumerate content types, file location, default sort order and url of each
   content:  {
@@ -8,6 +9,7 @@
       path:'content/articles',                      // content folder, from project dir
       _sort: 'pubdate',                             // default sort fields, comma delimited
       _url: "articles/{pubdate}_{stub}_{lang}",     // construct path part of permalink
+      resources: "static/ar_res",                   // copy images and audio here
     },
   },
 
