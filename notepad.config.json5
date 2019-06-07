@@ -1,31 +1,32 @@
 {
-  project: 'Sacred Traditions Interfaith Projects',
-  prefix: '902736890',
+  // global project info
+  project: {
+    label: 'Sacred Traditions Interfaith Projects',
+    prefix:  '902736890',
+    contact: 'Chad Jones <chad@notepad.com>',
+  },
 
-  // enumerate content types, file location, default sort order and url of each
+  // project content types, file locations, default sort order and url of each
   content:  {
     article: {
-      label:'Interfaith Articles',                         // user friendly type label
-      path:'content/articles',                      // content folder, from project dir
-      _sort: 'pubdate',                             // default sort fields, comma delimited
-      _url: "articles/{pubdate}_{stub}_{lang}",     // construct path part of permalink
-      resources: "static/ar_res",                   // copy images and audio here
+      label:'Interfaith Articles',                   // user friendly type label
+      path:'content/articles',                       // content folder, from project dir
+      res_path: "static/ar_res",                     // copy optimized images and audio here
+      sort: 'pubdate',                               // default sort fields, comma delimited
+      permalink: "articles/{pubdate}_{stub}_{lang}", // construct path part of permalink
+      fields: {
+        title:  {type: 'string', required: true, maxlength: 50, minlength: 0, default: ''},
+        author: {type: 'string', required: true, default: 'unknown'},
+        pubdate: {type: 'date', required: true, default: '{{today}}'},
+        published: {type: 'boolean', required: true, default: false},
+        status: {type: 'option', options:'draft|unapproved|approved', required: true, default: 'draft'},
+        lang: {type: 'string', required: true, default: 'en'},
+        tags: {type: 'set', required: false, default: ''}, // a set is comma-delimited
+        category: {type: 'string', required: true, default: 'dogs'},
+        stub: {type: 'string', required: true, default:"{{stub}}", hidden: true}, // default from title
+        likes: {type: 'integer', required: true, default: 0, hidden: true},
+      },
     },
   },
 
-  // enumerate the fields for each content type
-  fields: {
-    article: {
-      title:  {type: 'string', required: true, maxlength: 50, minlength: 0, default: ''},
-      author: {type: 'string', required: true, default: 'unknown'},
-      pubdate: {type: 'date', required: true, default: '{{today}}'},
-      published: {type: 'boolean', required: true, default: false},
-      status: {type: 'option', options:'draft|unapproved|approved', required: true, default: 'draft'},
-      lang: {type: 'string', required: true, default: 'en'},
-      tags: {type: 'set', required: false, default: ''}, // a set is comma-delimited
-      category: {type: 'string', required: true, default: 'dogs'},
-      stub: {type: 'string', required: true, default:"{{stub}}", hidden: true}, // default from title
-      likes: {type: 'integer', required: true, default: 0, hidden: true}
-    },
-  }
 }

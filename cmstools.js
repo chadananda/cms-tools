@@ -69,9 +69,14 @@ function notepad_sync() {
     console.error('No configuration file found')
     return
   }
-  let typecount = Object.keys(config.fields).length
-  console.log(`A configuration file was found: ${typecount} document type${typecount>1?'s':''} defined.`)
+  let types = Object.keys(config.content)
+  console.log(`A config file was found: ${types.length} type${types.length>1?'s':''} defined.`)
+  types.forEach((type) => {
+    let conf = config.content[type]
+    let fields = conf.fields
+    console.log(`Synching content type: "${type}"`, conf)
 
+  })
 
 
 
