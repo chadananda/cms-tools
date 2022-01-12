@@ -37,7 +37,7 @@
     "hash.js": "^1.1.7",
     "json5": "^2.1.0",
     "jsonfile": "^5.0.0",
-    "markdown-it": "^8.4.2",
+    "markdown-it": "^12.3.2",
     "marked": "^0.6.2",
     "parse-git-config": "^3.0.0",
     "path": "^0.12.7",
